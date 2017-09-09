@@ -13,7 +13,7 @@ def new_password(oldpassword,newpassword):
         return False
 
 password = 'wachtwoord'
-newpassword = input('Typ een nieuw wachtwoord. ')
+newpassword = input('Typ een nieuw wachtwoord: ')
 
 if new_password(password,newpassword) == True:
     password = newpassword
