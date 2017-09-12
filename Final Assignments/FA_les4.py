@@ -22,11 +22,10 @@ def ritprijs(leeftijd,weekendrit,afstandKM):
 
 km = int(input('Afstand in kilometers: '))
 leeftijd = int(input('Leeftijd: '))
-weekendrit = input('Weekendrit? ja/nee: ')
 
-if weekendrit == 'ja':
+if input('Weekendrit? ja/nee: ') == 'ja':
     weekendrit = True
 else:
     weekendrit = False
 
-print("De totale prijs van de reis is "+str(ritprijs(leeftijd,weekendrit,km))+" euro.")
+print("De totale prijs van de reis is",'{:.2f}'.format(ritprijs(leeftijd,weekendrit,km)),"euro.")

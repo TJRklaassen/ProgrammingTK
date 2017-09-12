@@ -1,8 +1,8 @@
 def new_password(oldpassword,newpassword):
 
     containNumber = False
-    for number in range(10):
-        if str(number) in newpassword:
+    for c in newpassword:
+        if c in '0123456789':
             containNumber = True
 
     if oldpassword != newpassword and len(newpassword) >= 6 and containNumber == True:
