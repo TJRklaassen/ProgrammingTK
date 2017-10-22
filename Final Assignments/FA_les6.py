@@ -8,7 +8,6 @@ def laad_kluizen():
     return list
 
 list = laad_kluizen()
-quit = False              #Zodra deze True wordt, zal de while loop beëindigen en het programma stoppen
 listNR = []
 listPIN = []
 
@@ -68,7 +67,7 @@ def kluizen_vrij(list):
     else:
         print("Er zijn nog",12-len(list),"kluizen vrij\n")
 
-while not quit:
+while True:
     keuze = int(input("Maak uw keuze\n"
                       "1: Ik wil een nieuwe kluis\n"
                       "2: Ik wil mijn kluis openen\n"
@@ -93,6 +92,6 @@ while not quit:
         kluizen_vrij(listNR)
     elif keuze == 5:
         print("Programma beëindigd")
-        quit = True
+        break
     else:
         print("Dat is geen juiste keuze!")
